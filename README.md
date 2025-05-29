@@ -1,5 +1,3 @@
-4Kmal4li.github.io
-
 <!-- template source = https://github.com/yujisatojr/react-portfolio-template
 
 1. Ensure you have [Node.js](https://nodejs.org/) installed. Check your installation by running:
