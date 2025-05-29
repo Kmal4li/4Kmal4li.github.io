@@ -1,4 +1,4 @@
-<!-- template source = https://github.com/yujisatojr/react-portfolio-template
+template source = https://github.com/yujisatojr/react-portfolio-template
 
 1. Ensure you have [Node.js](https://nodejs.org/) installed. Check your installation by running:
 
@@ -61,4 +61,4 @@ You can choose your preferred service (e.g., [Netlify](https://www.netlify.com/)
 
 4. **Access Your Deployed App**
 
-    After successfully deploying, you can access your app at `https://yourusername.github.io/your-repo-name`. -->
+    After successfully deploying, you can access your app at `https://yourusername.github.io/your-repo-name`.
