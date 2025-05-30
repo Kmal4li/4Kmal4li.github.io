@@ -59,7 +59,6 @@ function Contact() {
           <h1>Contact Me</h1>
           <p>Got a project waiting to be realized? Let's collaborate and make it happen!</p>
           <Box
-            ref={form}
             component="form"
             noValidate
             autoComplete="off"
