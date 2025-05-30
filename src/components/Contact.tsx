@@ -1,6 +1,6 @@
 import React, { useRef, useState } from 'react';
 import '../assets/styles/Contact.scss';
-// import emailjs from '@emailjs/browser';
+import emailjs from '@emailjs/browser';
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import SendIcon from '@mui/icons-material/Send';
@@ -19,35 +19,38 @@ function Contact() {
   const form = useRef();
 
   const sendEmail = (e: any) => {
-    e.preventDefault();
+  e.preventDefault();
 
-    setNameError(name === '');
-    setEmailError(email === '');
-    setMessageError(message === '');
+  const isValidEmail = (email: string) => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
 
-    /* Uncomment below if you want to enable the emailJS */
+  setNameError(name === '');
+  setEmailError(email === '' || !isValidEmail(email));
+  setMessageError(message === '');
 
-    // if (name !== '' && email !== '' && message !== '') {
-    //   var templateParams = {
-    //     name: name,
-    //     email: email,
-    //     message: message
-    //   };
+  if (name !== '' && email !== '' && message !== '' && isValidEmail(email)) {
+    const templateParams = {
+      name,
+      email,
+      message,
+    };
 
-    //   console.log(templateParams);
-    //   emailjs.send('service_id', 'template_id', templateParams, 'api_key').then(
-    //     (response) => {
-    //       console.log('SUCCESS!', response.status, response.text);
-    //     },
-    //     (error) => {
-    //       console.log('FAILED...', error);
-    //     },
-    //   );
-    //   setName('');
-    //   setEmail('');
-    //   setMessage('');
-    // }
-  };
+      console.log(templateParams);
+     emailjs.send('service_7gc3s5l', 'template_80ji1h5', templateParams,'4jrE2jbbdoO3FcwEy' ).then(
+        (response) => {
+          console.log('SUCCESS!', response.status, response.text);
+          alert('Message sent successfully!');
+        },
+        (error) => {
+          console.log('FAILED...', error);
+          alert('Message failed to send. Try again later.');
+        }
+      );
+
+    setName('');
+    setEmail('');
+    setMessage('');
+  }
+};
 
   return (
     <div id="contact">
