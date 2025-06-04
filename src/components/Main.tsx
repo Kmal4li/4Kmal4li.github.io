@@ -16,6 +16,7 @@ function Main() {
           <div className="social_icons">
             <a href="https://github.com/Kmal4li" target="_blank" rel="noreferrer"><GitHubIcon/></a>
             <a href="https://www.linkedin.com/in/muhammad-akmal-ali-3388b62a2/" target="_blank" rel="noreferrer"><LinkedInIcon/></a>
+            <a href="https://www.instagram.com/m._akmal_a/" target="_blank" rel="noreferrer"><i className="fab fa-instagram"/></a>
           </div>
           <h1>Muhammad Akmal Ali</h1>
           <p>Junior Software Developer</p>
