@@ -17,7 +17,7 @@ function Timeline() {
             contentStyle={{ background: 'white', color: 'rgb(39, 40, 34)' }}
             contentArrowStyle={{ borderRight: '7px solid  white' }}
             date="2024 - 2025"
-            iconStyle={{ background: 'green', color: 'rgb(39, 40, 34)' }}
+            iconStyle={{ background: 'black', color: 'rgb(39, 40, 34)' }}
             icon={<FontAwesomeIcon icon={faBriefcase} />}
           >
             <h3 className="vertical-timeline-element-title">Junior Software Developer</h3>
