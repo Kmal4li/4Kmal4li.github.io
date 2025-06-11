@@ -1,5 +1,5 @@
 {
-  "name": "Akmal-Ali",
+  "name": "my-portfolio",
   "version": "0.1.0",
   "private": true,
   "homepage": "https://Kmal4li.github.io/4Kmal4li.github.io/",
@@ -20,15 +20,7 @@
     "@types/node": "^16.18.98",
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
-<<<<<<< HEAD
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1",
-=======
-    "pdfjs-dist": "^2.16.105",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1",
     "react-pdf": "^9.2.1",
->>>>>>> 06cb29e (Initial commit)
     "react-scripts": "5.0.1",
     "react-vertical-timeline-component": "^3.6.0",
     "sass": "^1.77.4",
